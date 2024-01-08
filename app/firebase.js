@@ -16,6 +16,6 @@ export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app)
 export const db = getFirestore(app)
 
-
+// funsion para guardar libros
 export const saveLibro = (titulo, autor, editorial, isbn, fecha) =>
     addDoc(collection(db, "libros"), { titulo, autor, editorial, isbn, fecha });
