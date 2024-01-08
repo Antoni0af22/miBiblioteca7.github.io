@@ -14,11 +14,11 @@ import { saveLibro } from './firebase.js'
   librosForm.addEventListener('submit',(e)=>{
     e.preventDefault()
 
-    const titulo     = librosForm['titulo']
-    const autor      = librosForm['autor']
-    const editorial  = librosForm['editorial']
-    const isbn       = librosForm['isbn']
-    const fecha      = librosForm['fecha']
+    const titulo     = librosForm['libro-titulo']
+    const autor      = librosForm['libro-autor']
+    const editorial  = librosForm['libro-editorial']
+    const isbn       = librosForm['libro-isbn']
+    const fecha      = librosForm['libro-fecha']
 
     saveLibro(titulo.value, autor.value, editorial.value, isbn.value, fecha.value)
   })
